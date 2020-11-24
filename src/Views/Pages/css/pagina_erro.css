@@ -1,0 +1,77 @@
+@import url('geral.css');
+@import url('flexboxgrid.min.css');
+
+body{
+	background-color: #341F97;
+	overflow-y: hidden;
+}
+
+/* Paginad e link quebrado */
+
+.img{
+	display: none;
+	height: 100vh;
+}
+
+.aviso h1{
+	font-family: "Barlow-Bold";
+	font-size: 96px;
+	color: #fff;
+}
+
+.aviso h4{
+	font-family: "Barlow-Bold";
+	font-size: 24px;
+	color: #fff;
+}
+
+/* Paginas de erros */
+
+.corpo{
+	background: #fff;
+}
+
+.aviso .aviso_erro{
+	font-size: 18em;
+	color: #341F97;
+}
+
+.aviso .aviso_pagina,a{
+	color: #341F97;
+	font-family: 'Ubuntu-Regular',sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	margin-top: 20px;
+}
+
+.unico{
+	display: flex;
+	align-items: center;
+}
+
+.unico img{
+	display: none;
+}
+
+@media (max-width: 640px){
+
+	.aviso .aviso_erro{
+		font-size: 10em;
+		color: #341F97;
+	}
+
+}
+
+@media (min-width:1008px){
+	.img{
+		display: block;
+	}
+
+	.aviso{
+		margin-top: 0;
+	}
+
+	.unico img{
+		display: none;
+	}
+}

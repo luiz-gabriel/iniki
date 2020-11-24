@@ -1,0 +1,31 @@
+/*Fonts*/
+
+@font-face{
+	font-family: 'Barlow',sans-serif;
+	src: url('../Views/Pages/fonts/BarlowCondensed-Bold.ttf');
+}
+
+@font-face{
+	font-family: 'Ubuntu-Bold',sans-serif;
+	src: url('../Views/Pages/fonts/Ubuntu-Bold.ttf');
+}
+
+@font-face{
+	font-family: 'Ubuntu-Medium',sans-serif;
+	src: url('../Views/Pages/fonts/Ubuntu-Medium.ttf');
+}
+
+@font-face{
+	font-family: 'Ubuntu-Regular',sans-serif;
+	src: url('../Views/Pages/fonts/Ubuntu-Regular.ttf');
+}
+
+/*Formatacção padrão*/
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Ubuntu-Regular";
+	font-size: 1em;
+ 	 text-decoration: none;
+}
