@@ -11,8 +11,8 @@
         // private static $DataBase = 'nnljqinq_iniki';
 
         private static $Host = 'localhost';
-        private static $User = 'user';
-        private static $Password = '12345';
+        private static $User = 'user1';
+        private static $Password = 'LuizLG36';
         private static $DataBase = 'iniki';
 
         protected static function Connect()

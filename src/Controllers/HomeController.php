@@ -10,10 +10,10 @@
 
     public function execute(){
       $this->view->render();
-      HomeController::shortenRadomUrl();
+      $this->main();
     }
 
-    public function shortenRadomUrl(){
+    public function main(){
       
       if(isset($_POST['acao']) && !empty($_POST['url']) ){
         $url = $_POST['url'];

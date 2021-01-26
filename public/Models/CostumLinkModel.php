@@ -31,22 +31,20 @@
 
 		public function checkIfLinkExists($smallUrl)
 		{
-			// try{
-			// 	$sql = $this->pdo->prepare("SELECT * FROM `links` WHERE small_link=:url ");
-			// 	$sql->bindValue(':url', $smallUrl, \PDO::PARAM_STR);
-			// 	$return = $sql->execute();
+			try{
+				$sql = $this->pdo->prepare("SELECT * FROM `links` WHERE small_link=:url ");
+				$sql->bindValue(':url', $smallUrl, \PDO::PARAM_STR);
+				$return = $sql->execute();
 
-			// 	if($sql->rowcount() == true){
-	  //           return true;
-	  //       }else{
-	  //           return false;
-	  //       }
-			// 	// var_dump($result);
-			// }catch(\Exception $e){
-			// 	return null;
-			// }
-			return null;
-		}
+				if($sql->rowcount() == true){
+	            return true;
+	        }else{
+	            return false;
+	        }
+				// var_dump($result);
+			}catch(\Exception $e){
+				return null;
+			}		}
 
 	}
 	

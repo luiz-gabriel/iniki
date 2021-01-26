@@ -12,5 +12,16 @@
 		<button type="submit" name="action">Enviar</button>
 		{% block result %} {{ content|raw }} {% endblock %}
 	</form>
+
+	{% if storage is null %}
+			nenhum link cadastrado.
+	{% else %}
+		{% for key,value in storage%}
+			 {{value.link}}:
+			 {{value.costumLink}}
+		<br>
+		<br>
+		{% endfor %}
+	{%endif%}
 </body>
 </html>
