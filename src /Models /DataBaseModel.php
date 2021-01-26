@@ -5,10 +5,10 @@ class DataBaseModel
 {
     private static $pdo;
 
-    private static $Host = '54.39.133.89';
-    private static $User = 'nnljqinq_jfit ';
-    private static $Password = '*m9jPVUSweBr^ve@eMGEmm3Q8VZ5!m#VALw';
-    private static $DataBase = 'nnljqinq_iniki';
+    private static $Host = '';
+    private static $User = '';
+    private static $Password = '';
+    private static $DataBase = '';
 
     private static function Connect()
     {
