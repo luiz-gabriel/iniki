@@ -20,7 +20,7 @@
 				$sql->bindValue(':smallUrl', $smallUrl, \PDO::PARAM_STR);
 				$sql->bindValue(':status', 0, \PDO::PARAM_INT);
 				
-				$result = $sql->execute();
+				$sql->execute();
 
 				$return = $sql == true ? true : false;
 
