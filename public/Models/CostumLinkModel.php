@@ -37,14 +37,15 @@
 				$return = $sql->execute();
 
 				if($sql->rowcount() == true){
-	            return true;
-	        }else{
-	            return false;
-	        }
-				// var_dump($result);
+	            	return true;
+				}else{
+					return false;
+				}
+			 
 			}catch(\Exception $e){
 				return null;
-			}		}
+			}		
+		}
 
 	}
 	
