@@ -34,7 +34,7 @@
 			try{
 				$sql = $this->pdo->prepare("SELECT * FROM `links` WHERE small_link=:url ");
 				$sql->bindValue(':url', $smallUrl, \PDO::PARAM_STR);
-				$return = $sql->execute();
+				$sql->execute();
 
 				if($sql->rowcount() == true){
 	            	return true;
